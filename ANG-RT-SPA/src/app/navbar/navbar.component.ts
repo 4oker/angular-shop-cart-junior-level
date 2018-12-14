@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import {Product} from '../product';
-import {ProductInfoService} from '../product-info.service';
-import {Car} from '../car';
+import {ProductInfoService} from '../services/product-info.service';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',

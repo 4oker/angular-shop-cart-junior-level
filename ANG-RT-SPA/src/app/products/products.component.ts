@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, of} from 'rxjs';
 import {Product} from '../product';
-import {ProductInfoService} from '../product-info.service';
+import {ProductInfoService} from '../services/product-info.service';
 import {Car} from '../car';
 
 @Component({
@@ -24,24 +24,14 @@ export class ProductsComponent implements OnInit {
     this.getProducts();
     
   }
-
-  
-  
   getProducts():void{
     this.ProductInfoService.getProducts()
     .subscribe(storeProducts=>this.storeProducts=storeProducts)
-    
-    }
-
-    addFc(product:Product){
-      this.ProductInfoService.addFc(product)
-      
-     }
-
-
-     
-      
-    }
+  }
+addFc(product:Product){
+ this.ProductInfoService.addFc(product)
+  }   
+  }
      
       
     

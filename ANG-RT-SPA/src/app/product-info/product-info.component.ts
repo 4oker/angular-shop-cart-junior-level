@@ -2,8 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import {Product} from '../product';
 import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
-
-import {ProductInfoService} from '../product-info.service';
+import {ProductInfoService} from '../services/product-info.service';
 
 @Component({
   selector: 'app-product-info',
@@ -13,7 +12,6 @@ import {ProductInfoService} from '../product-info.service';
 export class ProductInfoComponent implements OnInit {
   
 	product:Product;
- 
   constructor(
     private route: ActivatedRoute,
     private location: Location,
@@ -27,13 +25,9 @@ export class ProductInfoComponent implements OnInit {
             .subscribe(product => this.product = product)
     })
     }
-   
-    
-    
     goBack(): void {
       this.location.back();
     }
-
     addFc(product:Product){
       this.ProductInfoService.addFc(product);
       

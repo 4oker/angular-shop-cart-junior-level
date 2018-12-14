@@ -2,7 +2,7 @@ import { Component, OnInit, Input,
   OnChanges,
   SimpleChange,
   SimpleChanges } from '@angular/core';
-  import{ ProductInfoService} from '../product-info.service';
+  
   import {Product} from '../product';
   
 @Component({
