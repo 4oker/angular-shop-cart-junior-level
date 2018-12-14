@@ -1,0 +1,18 @@
+<div class="inf" *ngIf="product">
+    <p *ngIf="show">rgdfgfdh</p>
+    <div class="img-src">
+            
+        <img [src]="product.image">
+        <span class="name">Name of product:{{product.name}}</span>
+        <span class="price">Price of product:{{product.price}} </span>
+        <button (click)="addFc(product)">Add</button>
+    </div>
+    <div class="price-description">
+    <h3>Detail-info</h3>
+    <div class="description"><span>{{product.description}} </span></div>
+   
+   <button (click)="goBack()">go back</button>
+   
+</div>
+</div>
+  

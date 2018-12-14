@@ -1,0 +1,33 @@
+<div class="main">
+    <div class="crs">
+      <ul>
+        <li class="card" *ngFor="let product of carsProducts">
+            <img [src]="product.image">
+            <h3>{{product.name}}</h3>
+            <p class="price">{{product.price}} hryvnias.</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p class="add-dtl">
+               
+            <a class="dtl-link" routerLink="/detail/{{product.id}}">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </a>
+            <a class="dtl-link"(click)="deleteFc(product)">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </a>
+          </p>
+  </li>
+  </ul>
+    
+    
+  </div>
+  <div class="container" *ngIf="carsProducts.length === 0">
+      <h1>Shopping cart is empty</h1>
+    </div>
+ 
+  <div class="clc">
+      <app-calculator [products]="carsProducts"></app-calculator>
+      
+    </div>
+        
+  </div>
+

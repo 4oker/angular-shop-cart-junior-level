@@ -1,0 +1,29 @@
+
+
+
+    <div class="product-list">
+        
+      <div class="card" *ngFor="let product of storeProducts">  
+          
+              <img [src]="product.image">
+              <h3>{{product.name}}</h3>
+              <p class="price">{{product.price}} hryvnias.</p>
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p class="add-dtl"><a class="dtl-link"(click)="addFc(product)">
+                   <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </a>
+              <a class="dtl-link" routerLink="/detail/{{product.id}}">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+              </a>
+              
+            </p>
+            </div>
+          </div>
+          
+            <!-- (click) passes input value to add() and then clears the input -->
+          
+          
+
+    
+
+

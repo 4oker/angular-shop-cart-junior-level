@@ -1,0 +1,94 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+li{
+    margin: 10px;
+}
+.clc{
+    width: 30%;
+    position: relative;
+}
+.crs{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+img {
+    max-height: 250px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.dtl-link:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  a.dtl-link{
+      
+    text-decoration: none;
+    color: rgb(15, 12, 12);
+    font-size: 12px;
+   padding: 12px;
+   font-weight: 600;
+    text-transform: uppercase;
+    
+}
+  .card{
+      border-top: 1px solid grey;
+      list-style: none;
+      margin-top: 50px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+   
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  p.add-dtl{
+      padding: 16px;
+    border-top: 1px solid grey;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.fa-info-circle:before {
+    color: rgb(5, 5, 76);
+    font-size: 24px;
+    padding: 8px;
+}
+
+.fa-trash:before {
+    color: rgb(5, 5, 76);
+    font-size: 24px;
+    padding: 8px;
+}
+.container{
+    width: 600px;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    left: 20%;
+}
+

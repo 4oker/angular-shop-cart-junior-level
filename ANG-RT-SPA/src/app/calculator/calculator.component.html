@@ -1,0 +1,23 @@
+
+       
+        
+ 
+      <ul>
+          <div class="muted">
+            <h2 class="your-cart">Your Product Cart</h2>
+            <h3 class="totalCn"> {{totalCn}}</h3>
+            </div>
+        <li *ngFor="let product of products">
+          <div>
+            <h4>Item:{{product.name}}</h4>
+          </div>
+          <span>Price: {{product.price}}</span>
+        </li>
+        <hr>
+        <li>
+                
+          <strong>Total sum: {{totalValue}}</strong>
+        </li>
+
+        <button class="cont">Continue</button>
+        </ul>
